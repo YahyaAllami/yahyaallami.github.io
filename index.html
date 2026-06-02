@@ -6,6 +6,9 @@
     <title>Intent Test</title>
 </head>
 <body>
-    <a href="myapp://settings">Open Android Settings</a>
+    <a href="intent:#Intent;action=android.settings.SETTINGS;end">A: action only</a><br>
+    <a href="intent:#Intent;action=android.settings.SETTINGS;package=com.android.settings;end">B: + package</a><br>
+    <a href="intent://settings/#Intent;scheme=android-app;action=android.settings.SETTINGS;end">C: host variant</a><br>
+    <a href="intent:#Intent;action=android.settings.SETTINGS;S.browser_fallback_url=https%3A%2F%2Fexample.com%2Fok;end">D: + fallback</a>
 </body>
 </html>
